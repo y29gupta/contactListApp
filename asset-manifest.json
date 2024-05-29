@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/contactListApp/static/css/main.e6c13ad2.css",
+    "main.js": "/contactListApp/static/js/main.c8e1d3e4.js",
+    "static/js/453.533b3019.chunk.js": "/contactListApp/static/js/453.533b3019.chunk.js",
+    "index.html": "/contactListApp/index.html",
+    "main.e6c13ad2.css.map": "/contactListApp/static/css/main.e6c13ad2.css.map",
+    "main.c8e1d3e4.js.map": "/contactListApp/static/js/main.c8e1d3e4.js.map",
+    "453.533b3019.chunk.js.map": "/contactListApp/static/js/453.533b3019.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.c8e1d3e4.js"
+  ]
+}
