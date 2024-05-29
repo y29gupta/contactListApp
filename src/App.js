@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+
+// import { Button, Grid } from '@mui/material';
+import ContactTable from './component/ContactTable';
+import {  useDispatch, useSelector } from 'react-redux';
+import ContactForm from './component/ContactForm';
+import { ToastContainer } from 'react-toastify';
+import { useState } from 'react';
+
 
 function App() {
+  const {contacts}=useSelector(state=>state.contactSlice)
+  const [update,setUpdate]=useState(null)
+  console.log(update,"upd")
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <ToastContainer />
+   
+      <ContactForm update={update} setUpdate={setUpdate}/>
+      <ContactTable contactList={contacts} setUpdate={setUpdate}/>
+   
+    </>
   );
 }
 
